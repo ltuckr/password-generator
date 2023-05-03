@@ -1,10 +1,5 @@
 // array of password creation character options// 
-var charsAll = {
-  upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  lowerCase: "abcdefghijklmnopqrstuvwxyz",
-  numbers: "1234567890",
-  symbols: "!@#$%^&*_+=?",
-};
+
 
 var generateBtn = document.querySelector("#generate");
 
@@ -21,6 +16,12 @@ function writePassword() {
 }
 
 function itselfPassword() {
+  var charsAll = {
+    upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    lowerCase: "abcdefghijklmnopqrstuvwxyz",
+    numbers: "1234567890",
+    symbols: "!@#$%^&*_+=?",
+  };
   var charSet = charsAll [passChars.to.upperCase()];
   var retVal= "";
   for (i = 0; i < passLength; i++)
