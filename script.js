@@ -1,13 +1,21 @@
 // array of password creation character options// 
-var uppercase= ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-var lowercase= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-var numbers= [0,1,2,3,4,5,6,7,8,9,0];
-var symbols= ["!","@","#","$","&","?"];
+var characters = {
+  upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  lowerCase: "abcdefghijklmnopqrstuvwxyz",
+  numbers: "1234567890",
+  symbols: "!@#$%^&*_+=?",
+};
 
+// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  // PROMPT:  How long is this password?
+  var passLength = howManychars(prompt)("Please enter the numeric value required for your password's length, from 8-128 characters.");
+  // PROMPT: What kinds of characters in this password? 
+  var 
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -17,3 +25,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
