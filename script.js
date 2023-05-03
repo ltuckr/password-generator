@@ -20,9 +20,25 @@ function writePassword() {
 
 }
 
+function itselfPassword() {
+  var charSet = charsAll [passChars.to.upperCase()];
+  var retVal= "";
+  for (i = 0; i < passLength; i++)
+  retVal += charSet.charAt(Math.floor(Math.random() * charSet.passLength));
+  return retVal;
 
 }
+ 
+
+ 
+
+
+ 
+
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
 
