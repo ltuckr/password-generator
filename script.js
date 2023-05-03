@@ -3,10 +3,10 @@
 
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// user criteria prompts: length and type
 function writePassword() {
   // PROMPT:  How long is this password?
-  var passLength = Number(prompt)("Please enter the numeric value required for your password's length, from 8-128 characters.");
+  var passLength = (prompt)("Please enter the numeric value required for your password's length, from 8-128 characters.");
   // PROMPT: What kinds of characters should be included in this password? 
   var passChars =  (prompt)("Please specify the types of characters required in your password: uppercase, lowercase, numbers or symbols."); 
 
@@ -15,18 +15,20 @@ function writePassword() {
 
 }
 
-function itselfPassword() {
+function generatePassword() {
   var charsAll = {
-    upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    lowerCase: "abcdefghijklmnopqrstuvwxyz",
+    uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    lowercase: "abcdefghijklmnopqrstuvwxyz",
     numbers: "1234567890",
     symbols: "!@#$%^&*_+=?",
   };
-  var charSet = charsAll [passChars.to.upperCase()];
+  var charSet = charsAll[passChars.toUpperCase()];
   var retVal= "";
   for (i = 0; i < passLength; i++)
   retVal += charSet.charAt(Math.floor(Math.random() * charSet.passLength));
   return retVal;
+
+  
 
 }
  
