@@ -11,7 +11,7 @@ var charsAll = {
   symbols: "!@#$%^&*_+=?",
 };
 
-// Variable Declaration 
+// Variables for user selection criteria
 var confirmLength = "";
 var confirmUpper;
 var confirmLower;
@@ -23,7 +23,7 @@ function writePassword() {
   // PROMPT:  How long is this password?
   var confirmLength = (prompt)("Please enter the numeric value required for your password's length, from 8-128 characters.");
 
-  //Error message loop if incorrect number selected.
+  //Error message for loop.
   while(confirmLength <= 7 || confirmLength >= 128) {
     alert("I'm sorry. Password length must be between 8-128 characters. Please try again.");
     var confirmLength = (prompt)("Please enter the numeric value required for your password's length, from 8-128 characters.");
@@ -36,7 +36,7 @@ function writePassword() {
   var confirmNumbers= confirm("Does the password require numbers?");
   var confirmSymbols = confirm("Does the password require symbols?");
     
-    //Error message and for loop repeating prompts if at least one criteria is not selected.
+    //Error message and for loop and repeating prompts if at least one criteria is not selected.
   while(confirmUpper=== false && confirmLower === false && confirmNumbers === false && confirmSymbols === false) {
     alert("Please choose at least one criteria for your password and try again");
     var confirmUpper = confirm("Does the password require uppercase letters?");
@@ -45,6 +45,38 @@ function writePassword() {
     var confirmSymbols = confirm("Does the password require symbols?");
 
   } 
+
+  // Now, let's make this password.
+  if (confirmUpper) {
+    password = password.concat(uppercase);
+  }
+
+  if (confirmLower) {
+    password = password.concat(lowercase);
+  }
+    
+  if (confirmnumbers) {
+    password= password.concat(numbers);
+  }
+
+  if (confirmsymbols) {
+    password = password.concat(symbols);
+  }
+
+  var password = [];
+
+  for (var i = 0; i < confirmLength; i++) {
+    createPassword = createPassword + password[Math.floor(Math.random() * password.length)];
+    console.log(createPassword)
+  }
+  return createPassword;
+
+  function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+  
+    passwordText.value = password;
+  }
 
 
 
@@ -61,7 +93,7 @@ function writePassword() {
 
 
 
-  var password = generatePassword();
+
 
 
 
