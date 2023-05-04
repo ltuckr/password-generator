@@ -11,7 +11,7 @@ function writePassword() {
   var upper=  (prompt)("Does the password require uppercase letters?"); 
   var lower=  (prompt)("Does the password require lowercase letters?"); 
   var numbers=  (prompt)("Does the password require numbers?"); 
-  var symbols=  (prompt)("Does the password require symbols); 
+  var symbols=  (prompt)("Does the password require symbols"); 
 
 
   var password = generatePassword();
