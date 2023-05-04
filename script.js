@@ -3,7 +3,7 @@
 
 var generateBtn = document.querySelector("#generate").addEventListener("click",writePassword);
 
-//Character array
+//Character bank array 
 var charsAll = {
   uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lowercase: "abcdefghijklmnopqrstuvwxyz",
@@ -16,14 +16,25 @@ function writePassword() {
   // PROMPT:  How long is this password?
   var length = (prompt)("Please enter the numeric value required for your password's length, from 8-128 characters.");
   // PROMPT: What kinds of characters should be included in this password? 
-  var upper=  (prompt)("Does the password require uppercase letters?"); 
-  var lower=  (prompt)("Does the password require lowercase letters?"); 
-  var numbers=  (prompt)("Does the password require numbers?"); 
-  var symbols=  (prompt)("Does the password require symbols?"); 
+  const upper=  (prompt)("Does the password require uppercase letters?"); 
+  const lower=  (prompt)("Does the password require lowercase letters?"); 
+  const number=  (prompt)("Does the password require numbers?"); 
+   const symbol=  (prompt)("Does the password require symbols?"); 
+
+
+
+
+  
+
+
+
+
 
 
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+
+
+
 
 }
 
