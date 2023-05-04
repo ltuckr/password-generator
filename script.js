@@ -65,11 +65,16 @@ function writePassword() {
 
   var password = [];
 
+  // creating randomization
+
+  var createPassword = ""
   for (var i = 0; i < confirmLength; i++) {
     createPassword = createPassword + password[Math.floor(Math.random() * password.length)];
     console.log(createPassword)
   }
   return createPassword;
+
+
 
   function writePassword() {
     var password = generatePassword();
