@@ -13,8 +13,8 @@ var charsAll = {
 
 // Variable Declaration 
 var confirmLength = "";
-var confirmUpperCase;
-var confirmLowerCase;
+var confirmUpper;
+var confirmLower;
 var confirmNumbers;
 var confirmSymbols;
 
@@ -31,10 +31,25 @@ function writePassword() {
 
 
   // PROMPT: What kinds of characters should be included in this password? 
-  const upper=  (prompt)("Does the password require uppercase letters?"); 
-  const lower=  (prompt)("Does the password require lowercase letters?"); 
-  const number=  (prompt)("Does the password require numbers?"); 
-   const symbol=  (prompt)("Does the password require symbols?"); 
+  var confirmUpper = confirm("Does the password require uppercase letters?");
+  var confirmLower = confirm("Does the password require lowercase letters?");    
+  var confirmNumbers= confirm("Does the password require numbers?");
+  var confirmSymbols = confirm("Does the password require symbols?");
+    
+    //Error message and for loop repeating prompts if at least one criteria is not selected.
+  while(confirmUpper=== false && confirmLower === false && confirmNumbers === false && confirmSymbols === false) {
+    alert("Please choose at least one criteria for your password and try again");
+    var confirmUpper = confirm("Does the password require uppercase letters?");
+    var confirmLower = confirm("Does the password require lowercase letters?");    
+    var confirmNumbers= confirm("Does the password require numbers?");
+    var confirmSymbols = confirm("Does the password require symbols?");
+
+  } 
+
+
+
+
+
 
 
 
