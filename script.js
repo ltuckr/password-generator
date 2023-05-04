@@ -11,12 +11,16 @@ var charsAll = {
   symbols: "!@#$%^&*_+=?",
 };
 
-// Variables for user selection criteria
+// Numeric length variable
 var confirmLength = "";
+
+// Criteria 
 var confirmUpper;
 var confirmLower;
 var confirmNumbers;
 var confirmSymbols;
+
+
 
 // user criteria prompts: length and type
 function writePassword() {
@@ -47,6 +51,8 @@ function writePassword() {
   } 
 
   // Now, let's make this password.
+  var password = [];
+
   if (confirmUpper) {
     password = password.concat(uppercase);
   }
@@ -65,63 +71,29 @@ function writePassword() {
 
   var password = [];
 
-  // creating randomization
+  // creating randomization, and empty string for password to be created into.
 
-  var createPassword = ""
   for (var i = 0; i < confirmLength; i++) {
     createPassword = createPassword + password[Math.floor(Math.random() * password.length)];
-    console.log(createPassword)
-  }
-  return createPassword;
-
-
+  password.push (createPassword);
+  };
 
   function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
   
     passwordText.value = password;
+  
   }
 
 
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
 }
 
-function generatePassword() {
- 
 
-
-
-  
-
-}
- 
-
- 
 
 
  
 
-
-
-
+ 
 
 
