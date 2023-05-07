@@ -8,6 +8,7 @@ This is a simple app for creating a password. Please note, this is purely experi
 ## Installation
 
 This is a simple web page URL. Deploying the link should allow you to arrive at the following screen: 
+![password screenshot](https://user-images.githubusercontent.com/128933116/236705681-6dfbbc3d-42cd-4778-bf87-35ef0c48704b.png)
 
 
 ## Usage
