@@ -24,7 +24,7 @@ function generatePassword() {
   var confirmLength = (prompt)("Please enter the numeric value required for your password's length, from 8-128 characters.");
 
   //Error message for loop.
-  while (confirmLength <= 7 || confirmLength >= 128);{
+  while (confirmLength <= 7 || confirmLength >= 128) {
     alert("I'm sorry. Password length must be between 8-128 characters. Please try again.");
     var confirmLength = (prompt)("Please enter the numeric value required for your password's length, from 8-128 characters.");
   }
