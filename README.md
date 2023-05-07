@@ -18,7 +18,7 @@ This webpage is intended for users to follow through prompts in order to create 
 
 
 ## Credits
-My awesome CS grader, Ronnie R. 
+My kind and helpful CG, Ronnie R. 
 https://rollbar.com/blog/javascript-referenceerror/#
 https://docs.oracle.com/javase/tutorial/uiswing/misc/action.html
 https://www.w3schools.com/jsref/met_win_confirm.asp
