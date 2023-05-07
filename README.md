@@ -18,7 +18,8 @@ This webpage is intended for users to follow through prompts in order to create 
 
 
 ## Credits
-I had a lot of help along the way. 
+My awesome CS grader, Ronnie R. 
+https://rollbar.com/blog/javascript-referenceerror/#
 https://docs.oracle.com/javase/tutorial/uiswing/misc/action.html
 https://www.w3schools.com/jsref/met_win_confirm.asp
 https://sabe.io/blog/javascript-yes-no-confirmation-box
